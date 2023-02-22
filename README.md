@@ -5,9 +5,10 @@ MinGW将经典的开源 C语言 编译器 GCC 移植到了 Windows 平台下，�
 + "12.2.0"意指当前程序包版本位12.2.0。
 
 + "posix"适用于基于Linux kernel 开发而来的操作系统，如linux，macos。
+    + posix: 启用 c++11/c11多线程功能。 依赖于 libwinpthreads，即使你不直接调用 API，也将分发给 winpthreads 。 使用应用程序分发一个DLL没有什么问题。
 
 + "win32"适用于基于windows开发而来的操作系统，如windows。
-
+    + win32: 没有C++11多线程功能。对任何调用 Win32 api或者 pthreads api的代码都不影响。 你可以同时使用。
 + "dwarf,seh,sjlj"这些都是异常处理模型，其中dwarf仅支持32的操作系统，性能较强；seh仅支持64位的操作系统，性能较强；sjlj同时支持32位和64位操作系统，但性能较差。
 
 + "msvcrt" 在较老的windows操作系统（win10之前），较低版本的visual studio（2017之前）上使用。
