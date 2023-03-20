@@ -17,5 +17,6 @@ MinGW将经典的开源 C语言 编译器 GCC 移植到了 Windows 平台下，�
 
 下载好对应的MinGW-W64后解压到目标文件夹下（这个由自己定），然后将mingw下的bin文件夹所在的位置添加到系统环境变量中并在终端中通过 gcc -v 检查是否配置成功。
 
-[参考网站](https://www.cnblogs.com/duruofei/p/15674502.html)
-[文件源网站](https://github.com/niXman/mingw-builds-binaries/releases)
++ [参考网站](https://www.cnblogs.com/duruofei/p/15674502.html)
+
++ [文件源网站](https://github.com/niXman/mingw-builds-binaries/releases)
